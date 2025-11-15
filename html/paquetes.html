@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paquetes - NENEMI-A</title>
+    <link href="/css/estilos.css" rel="stylesheet" />
+    <link href="/imajenes/icono-alebrige.png" rel="icon" />
+  </head>
+  <body>
+    <!-- Checkbox oculto para controlar el menu -->
+    <input type="checkbox" id="menu-palanca" class="menu-checkbox" />
+
+    <!--imagen -->
+    <label for="menu-palanca" class="menu-btn">
+      <img src="/imajenes/icono-alebrige.png" alt="Menú" />
+    </label>
+
+    <!-- menu lateral -->
+    <nav class="menu-lateral">
+      <!-- boton cerrar -->
+      <label for="menu-palanca" class="cerrar-menu">&times</label>
+
+      <ul>
+        <li><a href="/html/inicio.html">Inicio</a></li>
+        <li><a href="/html/destinos.html">Destinos</a></li>
+        <li><a href="/html/paquetes.html">Paquetes</a></li>
+        <li><a href="/html/reservas.html">Reservas</a></li>
+        <li><a href="/html/sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/html/soporte-tecnico.html">Soporte Tecnico</a></li>
+        <li><a href="/html/terminos-y-condiciones.html">terminos y condiciones</a></li> 
+      </ul>
+    </nav>
+
+    <label for="menu-palanca" class="cubridor"></label>
+    <!-- fin del menu-->
+
+    <!-- Contenido de paquetes -->
+    <div class="pagina-contenedor">
+      <h1 class="seccion-titulo">Nuestros Paquetes Turísticos</h1>
+
+      <div class="paquetes-grid">
+        <!-- Paquete Basico -->
+        <div class="paquete-card">
+          <div class="paquete-header">
+            <h3>Explorador</h3>
+            <p>Perfecto para comenzar</p>
+            <div class="paquete-precio">$3,500</div>
+            <p>Por persona / 3 días</p>
+          </div>
+          <div class="paquete-body">
+            <ul class="paquete-lista">
+              <li>Transporte terrestre incluido</li>
+              <li>Hospedaje 2 noches</li>
+              <li>Desayunos incluidos</li>
+              <li>Guía turístico certificado</li>
+              <li>Visita a 3 destinos principales</li>
+              <li>Seguro de viajero básico</li>
+            </ul>
+            <a href="#" class="btn-destino" style="width: 100%; text-align: center; display: block; margin-top: 20px;">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Paquete Intermedio -->
+        <div class="paquete-card paquete-destacado">
+          <div class="paquete-header">
+            <h3>Aventurero</h3>
+            <p>El más popular</p>
+            <div class="paquete-precio">$6,800</div>
+            <p>Por persona / 5 días</p>
+          </div>
+          <div class="paquete-body">
+            <ul class="paquete-lista">
+              <li>Transporte terrestre de lujo</li>
+              <li>Hospedaje 4 noches en hoteles 4 estrellas</li>
+              <li>Todos los alimentos incluidos</li>
+              <li>Guía turístico bilingüe</li>
+              <li>Visita a 6 destinos turísticos</li>
+              <li>Actividades culturales incluidas</li>
+              <li>Seguro de viajero premium</li>
+              <li>Kit de bienvenida con artesanías</li>
+            </ul>
+            <a href="#" class="btn-destino" style="width: 100%; text-align: center; display: block; margin-top: 20px;">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Paquete Premium -->
+        <div class="paquete-card">
+          <div class="paquete-header" style="background: linear-gradient(135deg, #F6B93B, #C97A40);">
+            <h3>Experiencia Total</h3>
+            <p>La experiencia completa</p>
+            <div class="paquete-precio">$12,500</div>
+            <p>Por persona / 7 días</p>
+          </div>
+          <div class="paquete-body">
+            <ul class="paquete-lista">
+              <li>Transporte privado de lujo</li>
+              <li>Hospedaje 6 noches en hoteles boutique</li>
+              <li>Gastronomía gourmet incluida</li>
+              <li>Guía turístico privado especializado</li>
+              <li>Visita a más de 10 destinos exclusivos</li>
+              <li>Experiencias culturales inmersivas</li>
+              <li>Talleres artesanales privados</li>
+              <li>Cenas con chefs locales reconocidos</li>
+              <li>Seguro de viajero VIP</li>
+              <li>Fotografía profesional del viaje</li>
+              <li>Souvenirs exclusivos</li>
+            </ul>
+            <a href="#" class="btn-destino" style="width: 100%; text-align: center; display: block; margin-top: 20px;">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Paquete Familiar -->
+        <div class="paquete-card">
+          <div class="paquete-header" style="background: linear-gradient(135deg, #4E8B61, #3A6D4A);">
+            <h3>Familiar</h3>
+            <p>Diversión para todos</p>
+            <div class="paquete-precio">$18,000</div>
+            <p>Familia de 4 / 5 días</p>
+          </div>
+          <div class="paquete-body">
+            <ul class="paquete-lista">
+              <li>Transporte familiar confortable</li>
+              <li>Hospedaje 4 noches en suite familiar</li>
+              <li>Todos los alimentos incluidos</li>
+              <li>Actividades para niños y adultos</li>
+              <li>Guía turístico especializado en familias</li>
+              <li>Entrada a parques y zonas arqueológicas</li>
+              <li>Talleres infantiles de artesanías</li>
+              <li>Seguro familiar completo</li>
+            </ul>
+            <a href="#" class="btn-destino" style="width: 100%; text-align: center; display: block; margin-top: 20px;">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Paquete Cultural -->
+        <div class="paquete-card">
+          <div class="paquete-header" style="background: linear-gradient(135deg, #B84E2C, #8B4A23);">
+            <h3>Inmersión Cultural</h3>
+            <p>Vive la tradición</p>
+            <div class="paquete-precio">$8,900</div>
+            <p>Por persona / 6 días</p>
+          </div>
+          <div class="paquete-body">
+            <ul class="paquete-lista">
+              <li>Transporte compartido</li>
+              <li>Hospedaje 5 noches en posadas tradicionales</li>
+              <li>Comidas con familias locales</li>
+              <li>Talleres artesanales intensivos</li>
+              <li>Clases de gastronomía tradicional</li>
+              <li>Visita a comunidades indígenas</li>
+              <li>Participación en ceremonias tradicionales</li>
+              <li>Guía antropólogo especializado</li>
+              <li>Material educativo incluido</li>
+            </ul>
+            <a href="#" class="btn-destino" style="width: 100%; text-align: center; display: block; margin-top: 20px;">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Paquete Fin de Semana -->
+        <div class="paquete-card">
+          <div class="paquete-header" style="background: linear-gradient(135deg, #C97A40, #F6B93B);">
+            <h3>Escapada Express</h3>
+            <p>Fin de semana perfecto</p>
+            <div class="paquete-precio">$2,200</div>
+            <p>Por persona / 2 días</p>
+          </div>
+          <div class="paquete-body">
+            <ul class="paquete-lista">
+              <li>Transporte redondo desde tu ciudad</li>
+              <li>Hospedaje 1 noche</li>
+              <li>2 comidas incluidas</li>
+              <li>Tour guiado por el pueblo mágico</li>
+              <li>Visita a mercados artesanales</li>
+              <li>Tiempo libre para explorar</li>
+              <li>Seguro de viajero básico</li>
+            </ul>
+            <a href="#" class="btn-destino" style="width: 100%; text-align: center; display: block; margin-top: 20px;">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion adicional -->
+      <div class="nosotros-contenido" style="margin-top: 60px;">
+        <h3 style="text-align: center;">¿Necesitas un paquete personalizado?</h3>
+        <p style="text-align: center;">
+          Contáctanos y diseñaremos el viaje perfecto según tus intereses,
+          presupuesto y tiempo disponible. Nuestros expertos en turismo cultural
+          están listos para crear una experiencia única para ti.
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="soporte-tecnico.html" class="btn-destino" style="font-size: 1.2em; padding: 15px 40px;">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- inicio del footer-->
+    <footer>
+      <div class="footer-contenido">
+        <p>&copy; 2025 NENEMI-A. Todos los derechos reservados.</p>
+
+        <nav class="social-links">
+          <a href="https://www.instagram.com/nenemi_a__oficial" target="_blank">
+            <img src="/imajenes/instagram-icono.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/Nenem%Ia" target="_blank">
+            <img src="/imajenes/icono-Facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.tiktok.com/@nenemia52" target="_blank">
+            <img src="/imajenes/logo-TikTok.png" alt="tiktok" />
+          </a>
+        </nav>
+
+        <div class="partners">
+          <img src="/imajenes/icono-alebrige.png" alt="Partner 1" />
+        </div>
+      </div>
+    </footer>
+    <!-- fin del footer-->
+  </body>
+</html>

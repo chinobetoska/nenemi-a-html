@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas - NENEMI-A</title>
+    <link href="/css/estilos.css" rel="stylesheet" />
+    <link href="/imajenes/icono-alebrige.png" rel="icon" />
+  </head>
+  <body>
+    <!-- Checkbox oculto para controlar el menu -->
+    <input type="checkbox" id="menu-palanca" class="menu-checkbox" />
+
+    <!--imagen -->
+    <label for="menu-palanca" class="menu-btn">
+      <img src="/imajenes/icono-alebrige.png" alt="Menú" />
+    </label>
+
+    <!-- menu lateral -->
+    <nav class="menu-lateral">
+      <!-- boton cerrar -->
+      <label for="menu-palanca" class="cerrar-menu">&times</label>
+
+      <ul>
+        <li><a href="/inicio.html">Inicio</a></li>
+        <li><a href="/destinos.html">Destinos</a></li>
+        <li><a href="/paquetes.html">Paquetes</a></li>
+        <li><a href="/reservas.html">Reservas</a></li>
+        <li><a href="/sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/soporte-tecnico.html">Soporte Técnico</a></li>
+        <li><a href="/html/terminos-y-condiciones.html">terminos y condiciones</a></li> 
+      </ul>
+    </nav>
+
+    <label for="menu-palanca" class="cubridor"></label>
+    <!-- fin del menu-->
+
+    <!-- Contenido de reservas -->
+    <div class="pagina-contenedor">
+      <h1 class="seccion-titulo">Realiza tu Reserva</h1>
+
+      <div class="soporte-contenedor">
+        <h3>Completa el formulario de reservación</h3>
+        <p style="text-align: center; color: #5E5E5E; font-size: 1.1em; margin-bottom: 30px;">
+          Llena todos los campos y nos pondremos en contacto contigo para confirmar tu reserva en menos de 24 horas.
+        </p>
+
+        <form class="soporte-form" action="/html/inicio.html" method="get">
+          <!-- Informacion Personal -->
+          <div style="background: rgba(246, 185, 59, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+            <h3 style="color: #8B4A23; margin-bottom: 20px; font-size: 1.5em;">Información Personal</h3>
+            
+            <div class="form-grupo">
+              <label for="nombre">Nombre Completo:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Nombre y apellidos"
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="email">Correo Electrónico:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="tu@email.com"
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="telefono">Teléfono de Contacto:</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                placeholder="10 dígitos"
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="ciudad">Ciudad de Origen:</label>
+              <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad, Estado"/>
+            </div>
+          </div>
+
+          <!-- Detalles de la Reserva -->
+          <div style="background: rgba(201, 122, 64, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+            <h3 style="color: #8B4A23; margin-bottom: 20px; font-size: 1.5em;">Detalles de tu Viaje</h3>
+            
+            <div class="form-grupo">
+              <label for="paquete">Selecciona tu Paquete:</label>
+              <select id="paquete" name="paquete" required>
+                <option value="">Elige un paquete</option>
+                <option value="explorador">Explorador - $3,500 (3 días)</option>
+                <option value="aventurero">Aventurero - $6,800 (5 días) ⭐ Más Popular</option>
+                <option value="experiencia-total">Experiencia Total - $12,500 (7 días)</option>
+                <option value="familiar">Familiar - $18,000 (5 días - 4 personas)</option>
+                <option value="inmersion-cultural">Inmersión Cultural - $8,900 (6 días)</option>
+                <option value="escapada-express">Escapada Express - $2,200 (2 días)</option>
+                <option value="personalizado">Paquete Personalizado</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="destino">Destino Preferido:</label>
+              <select id="destino" name="destino" required>
+                <option value="">Selecciona un destino</option>
+                <option value="oaxaca">Oaxaca - Tierra de Alebrijes</option>
+                <option value="guanajuato">Guanajuato - Ciudad Colonial</option>
+                <option value="chiapas">Chiapas - Naturaleza y Cultura Maya</option>
+                <option value="puebla">Puebla - Historia y Tradición</option>
+                <option value="yucatan">Yucatán - Mundo Maya</option>
+                <option value="san-miguel">San Miguel de Allende - Arte y Cultura</option>
+                <option value="varios">Tour por Varios Destinos</option>
+                <option value="consultar">Necesito Asesoría</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="fecha-inicio">Fecha de Inicio Preferida:</label>
+              <input
+                type="date"
+                id="fecha-inicio"
+                name="fecha-inicio"
+                required
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="num-personas">Número de Personas:</label>
+              <input
+                type="number"
+                id="num-personas"
+                name="num-personas"
+                min="1"
+                max="20"
+                required
+                placeholder="¿Cuántas personas viajarán?"
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="habitaciones">Tipo de Habitación:</label>
+              <select id="habitaciones" name="habitaciones" required>
+                <option value="">Selecciona tipo de habitación</option>
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="triple">Triple</option>
+                <option value="familiar">Familiar (4+ personas)</option>
+                <option value="suite">Suite</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Preferencias Adicionales -->
+          <div style="background: rgba(78, 139, 97, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+            <h3 style="color: #8B4A23; margin-bottom: 20px; font-size: 1.5em;">Preferencias y Solicitudes Especiales</h3>
+            
+            <div class="form-grupo">
+              <label for="alimentacion">Preferencias Alimenticias:</label>
+              <select id="alimentacion" name="alimentacion">
+                <option value="ninguna">Sin restricciones</option>
+                <option value="vegetariano">Vegetariano</option>
+                <option value="vegano">Vegano</option>
+                <option value="sin-gluten">Sin gluten</option>
+                <option value="alergias">Tengo alergias alimentarias</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="actividades">Actividades de Interés:</label>
+              <select id="actividades" name="actividades">
+                <option value="">Selecciona tu principal interés</option>
+                <option value="cultura">Cultura e Historia</option>
+                <option value="artesanias">Artesanías y Talleres</option>
+                <option value="gastronomia">Gastronomía Local</option>
+                <option value="naturaleza">Naturaleza y Ecoturismo</option>
+                <option value="aventura">Aventura y Deportes</option>
+                <option value="fotografia">Fotografía</option>
+                <option value="relajacion">Relajación y Descanso</option>
+                <option value="todo">Un poco de todo</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="transporte">¿Necesitas Transporte desde tu Ciudad?</label>
+              <select id="transporte" name="transporte" required>
+                <option value="">Selecciona una opción</option>
+                <option value="si">Sí, necesito transporte incluido</option>
+                <option value="no">No, llegaré por mi cuenta</option>
+                <option value="consultar">Necesito información</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="solicitudes">Solicitudes o Comentarios Adicionales:</label>
+              <textarea
+                id="solicitudes"
+                name="solicitudes"
+                placeholder="¿Hay algo más que debamos saber? (Ocasión especial, necesidades especiales, preferencias de hospedaje, etc.)"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Metodo de Pago -->
+          <div style="background: rgba(139, 74, 35, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+            <h3 style="color: #8B4A23; margin-bottom: 20px; font-size: 1.5em;">Información de Pago</h3>
+            
+            <div class="form-grupo">
+              <label for="metodo-pago">Método de Pago Preferido:</label>
+              <select id="metodo-pago" name="metodo-pago" required>
+                <option value="">Selecciona método de pago</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+                <option value="deposito">Depósito en Efectivo</option>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="meses">Pago en Meses sin Intereses</option>
+                <option value="efectivo-viaje">Efectivo al Inicio del Viaje</option>
+              </select>
+            </div>
+
+            <div style="background: #FEFCF7; padding: 15px; border-radius: 8px; border-left: 4px solid #F6B93B; margin-top: 20px;">
+              <p style="color: #5E5E5E; margin: 0; font-size: 0.95em;">
+                <strong style="color: #8B4A23;">Nota:</strong> Se requiere un anticipo del 60% para confirmar tu reserva. El resto se puede pagar hasta 7 días antes del viaje.
+              </p>
+            </div>
+          </div>
+
+          <!-- Terminos y Condiciones -->
+          <div class="form-grupo" style="margin-bottom: 30px;">
+            <label style="display: flex; align-items: center; cursor: pointer;">
+              <input
+                type="checkbox"
+                id="terminos"
+                name="terminos"
+                required
+                style="width: auto; margin-right: 10px;"
+              />
+              <span>
+                Acepto los <a href="#" style="color: #C97A40; text-decoration: underline;">términos y condiciones</a> 
+                y la <a href="#" style="color: #C97A40; text-decoration: underline;">política de cancelación</a>
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar Reserva</button>
+
+          <p style="text-align: center; color: #5E5E5E; margin-top: 20px; font-size: 0.95em;">
+            Al enviar este formulario, recibirás un correo de confirmación con los detalles de tu reserva y las instrucciones de pago.
+          </p>
+        </form>
+      </div>
+
+      <!-- Informacion Adicional -->
+      <div class="nosotros-contenido" style="margin-top: 60px;">
+        <h3 style="text-align: center;">¿Tienes Dudas sobre tu Reserva?</h3>
+        
+        <div class="valores-grid" style="margin-top: 30px;">
+          <div class="valor-card">
+            <h4>📞 Llámanos</h4>
+            <p>+52 (771) 123-4567<br>Lunes a Viernes<br>9:00 AM - 7:00 PM</p>
+          </div>
+
+          <div class="valor-card">
+            <h4>💬 WhatsApp</h4>
+            <p>+52 771 123 4567<br>Respuesta inmediata<br>24/7</p>
+          </div>
+
+          <div class="valor-card">
+            <h4>✉️ Email</h4>
+            <p>reservas@nenemia.com.mx<br>Respuesta en 24 hrs</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, rgba(246, 185, 59, 0.2), rgba(201, 122, 64, 0.2)); border-radius: 15px; border: 2px solid #C97A40;">
+          <h3 style="text-align: center; color: #8B4A23; margin-bottom: 15px;">💳 Opciones de Pago Flexibles</h3>
+          <p style="text-align: center; color: #5E5E5E;">
+            Ofrecemos planes de pago a meses sin intereses con tarjetas participantes.<br>
+            Anticipo del 60% para reservar, el resto hasta 7 días antes del viaje.<br>
+            <strong>Políticas de cancelación flexibles disponibles.</strong>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <h3 style="color: #8B4A23; margin-bottom: 20px;">¿Prefieres Asesoría Personalizada?</h3>
+          <p style="color: #5E5E5E; font-size: 1.1em; margin-bottom: 25px;">
+            Nuestros expertos en viajes pueden ayudarte a diseñar el paquete perfecto para ti.
+          </p>
+          <a href="soporte-tecnico.html" class="btn-destino" style="font-size: 1.2em; padding: 15px 40px;">Contactar a un Asesor</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- inicio del footer-->
+    <footer>
+      <div class="footer-contenido">
+        <p>&copy; 2025 NENEMI-A. Todos los derechos reservados.</p>
+
+        <nav class="social-links">
+          <a href="https://www.instagram.com/nenemi_a__oficial" target="_blank">
+            <img src="/imajenes/instagram-icono.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/Nenem%Ia" target="_blank">
+            <img src="/imajenes/icono-Facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.tiktok.com/@nenemia52" target="_blank">
+            <img src="/imajenes/logo-TikTok.png" alt="tiktok" />
+          </a>
+        </nav>
+
+        <div class="partners">
+          <img src="/imajenes/icono-alebrige.png" alt="Partner 1" />
+        </div>
+      </div>
+    </footer>
+    <!-- fin del footer-->
+  </body>
+</html>
